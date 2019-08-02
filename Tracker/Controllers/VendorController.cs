@@ -59,8 +59,7 @@ namespace Tracker.Controllers
     // {
     //   Dictionary<string, object> model = new Dictionary<string, object>();
     //   Vendor selectedVendor = Vendor.Find(vendorId);
-    //   List<Order> vendorOrders = selectedVendor.Orders;
-    //   Order.ClearAll();
+    //   selectedVendor.ClearAllVendorOrders();
     //   return View("Show", model);
     // }
 

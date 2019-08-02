@@ -4,7 +4,8 @@
 
 @using Tracker.Models;
 
-<h3>Here are all the orders in this vendor:</h3>
+<h3>Here are all the orders for <i>@Model["vendor"].Name</i>:</h3>
+<br>
 
 <ol>
 @foreach (Order order in @Model["orders"])
@@ -12,8 +13,7 @@
   <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
 }
 </ol>
-
+<br>
 <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a></p>
-<!-- <p><a href='/vendors/@Model["vendor"].Id/orders/delete'>Delete all orders</a></p>  //This will be useful later -->
 <p><a href='/vendors'>Return to vendor list</a></p>
 <p><a href='/'>Return to Main Page</a></p>

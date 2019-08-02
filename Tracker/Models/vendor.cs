@@ -17,9 +17,14 @@ namespace Tracker.Models
       Orders = new List<Order> { };
     }
 
-    public static void ClearAll()
+    // public static void ClearAll()
+    // {
+    //   _instances.Clear();
+    // }
+
+    public void ClearAllVendorOrders()
     {
-      _instances.Clear();
+      Orders.Clear();
     }
 
     public static List<Vendor> GetAll()

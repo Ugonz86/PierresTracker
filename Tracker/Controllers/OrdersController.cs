@@ -23,5 +23,14 @@ namespace Tracker.Controllers
       model.Add("vendor", vendor);
       return View(model);
     }
+
+    [HttpPost("/vendors/{vendorId}/orders/delete")]
+    public ActionResult Delete(int vendorId)
+    {
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      Vendor selectedVendor = Vendor.Find(vendorId);
+      selectedVendor.ClearAllVendorOrders();
+      return View("Show", model);
+    }
   }
 }
