@@ -11,7 +11,10 @@ This MVP application has a Vendor and order classes with properties and function
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **BEHAVIOR** | INPUT | OUTPUT |
+| **The user can add vendors to a list** | Select Add Vendors | Updated vendor list appears, new vendor added |
+| **The user can select a vendor from a list created** | Select Vendor | Vendor profile displays |
+| **The user can add orders for a selected vendor** | Select Add Order | Updated order list appears |
+| **The user can select order from a selected vendor** | Select Order | Selected order displays |
 
 ## Setup/Installation Requirements
 
