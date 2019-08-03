@@ -34,35 +34,35 @@ namespace Tracker.Tests
       Assert.AreEqual(description, result);
     }
 
-    [TestMethod]
-    public void SetDescription_SetDescription_String()
-    {
-
-      string description = "croissants";
-      string quantity = "100";
-      string price = "100";
-      string date = "08/01/2019";
-
-      Order newOrder = new Order(description, quantity, price, date);
-
-      string updatedDescription = ("french bread");
-      newOrder.Description = updatedDescription;
-      string result = newOrder.Description;
-
-      string updatedQuantity = ("200");
-      newOrder.Quantity = updatedQuantity;
-      string result2 = newOrder.Quantity;
-
-      string updatedPrice = ("200");
-      newOrder.Price = updatedPrice;
-      string result3 = newOrder.Price;
-
-      string updatedDate = ("08/02/2019");
-      newOrder.Date = updatedDate;
-      string result4 = newOrder.Date;
-
-      Assert.AreEqual(updatedDescription, updatedQuantity, updatedPrice, updatedDate);
-    }
+    // [TestMethod]
+    // public void SetDescription_SetDescription_String()
+    // {
+    //
+    //   string description = "croissants";
+    //   string quantity = "100";
+    //   string price = "100";
+    //   string date = "08/01/2019";
+    //
+    //   Order newOrder = new Order(description, quantity, price, date);
+    //
+    //   string updatedDescription = ("french bread");
+    //   newOrder.Description = updatedDescription;
+    //   string result = newOrder.Description;
+    //
+    //   string updatedQuantity = ("200");
+    //   newOrder.Quantity = updatedQuantity;
+    //   string result2 = newOrder.Quantity;
+    //
+    //   string updatedPrice = ("200");
+    //   newOrder.Price = updatedPrice;
+    //   string result3 = newOrder.Price;
+    //
+    //   string updatedDate = ("08/02/2019");
+    //   newOrder.Date = updatedDate;
+    //   string result4 = newOrder.Date;
+    //
+    //   Assert.AreEqual(updatedDescription, updatedQuantity, updatedPrice, updatedDate);
+    // }
 
     [TestMethod]
     public void GetAll_ReturnsEmptyList_OrderList()
