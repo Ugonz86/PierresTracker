@@ -2,18 +2,17 @@
   Layout = "_Layout";
 }
 @using Tracker.Models;
-
-<h1><b>Vendors</b></h1>
-
+<br>
+<br>
+<h1 style="margin-left: 40px"><b>Vendors</b></h1>
 @if (@Model.Count == 0)
 {
-  <h3>No vendors have been added yet!</h3>
+  <h3 style="margin-left: 40px">No vendors have been added yet!</h3>
 }
 @foreach (Vendor vendor in Model)
 {
-  <i><h3><a href='/vendors/@vendor.Id'>@vendor.Name</a></h3></i>
+  <h3 style="margin-left: 40px"> <i><a href='/vendors/@vendor.Id'>@vendor.Name</a></i></h3>
 }
+<h3 style="margin-left: 40px"> <a href='/vendors/new'>Add a new vendor</a></h3>
 <br>
-<h3><a href='/vendors/new'>Add a new vendor</a></h3>
-<br>
-<p><a href='/'>Back home</a></p>
+<p style="margin-left: 40px"> <a href='/'>Back home</a></p>
