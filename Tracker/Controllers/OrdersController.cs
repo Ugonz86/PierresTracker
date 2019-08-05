@@ -24,13 +24,23 @@ namespace Tracker.Controllers
       return View(model);
     }
 
-    [HttpPost("/vendors/{vendorId}/orders/delete")]
-    public ActionResult Delete(int vendorId)
-    {
-      Dictionary<string, object> model = new Dictionary<string, object>();
-      Vendor selectedVendor = Vendor.Find(vendorId);
-      selectedVendor.ClearAllVendorOrders();
-      return View("Show", model);
-    }
+    //This will be added later
+    // [HttpGet("/vendors/{vendorId}/order/{orderId}/edit")]
+    // public ActionResult Edit(int vendorId, int orderId)
+    // {
+    //     Vendor vendor = Vendor.Find(vendorId);
+    //     Order order = Order.Find(orderId);
+    //     return View(order);
+    // }
+
+    // This will be used later
+    // [HttpPost("/vendors/{vendorId}/orders/delete")]
+    // public ActionResult Delete(int vendorId)
+    // {
+    //   Dictionary<string, object> model = new Dictionary<string, object>();
+    //   Vendor selectedVendor = Vendor.Find(vendorId);
+    //   selectedVendor.ClearAllVendorOrders();
+    //   return View("Show", model);
+    // }
   }
 }
